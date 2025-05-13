@@ -1,0 +1,210 @@
+[
+    {
+        "role": "user",
+        "content": "what is time in india"
+    },
+    {
+        "role": "assistant",
+        "content": "The current time in India is 01:10:16."
+    },
+    {
+        "role": "user",
+        "content": "current war condition in india"
+    },
+    {
+        "role": "assistant",
+        "content": "As per the latest updates, a ceasefire holds a day after deadly fighting was halted."
+    },
+    {
+        "role": "user",
+        "content": "when was cease fire stated and by whom "
+    },
+    {
+        "role": "assistant",
+        "content": "The India-Pakistan ceasefire agreement came into force at 5 PM IST on May 10, 2025, initiated by Pakistan's DGMO."
+    },
+    {
+        "role": "user",
+        "content": "pakistan alies in indo pakistan wat"
+    },
+    {
+        "role": "assistant",
+        "content": "According to the search results, Pakistan's allies in the recent conflict are China and Turkey."
+    },
+    {
+        "role": "user",
+        "content": "and for india"
+    },
+    {
+        "role": "assistant",
+        "content": "According to the search results, India's allies in the recent conflict are the United States, France, and Israel."
+    },
+    {
+        "role": "user",
+        "content": "but france sanctioned 1 billion dollars to pakistan as loan "
+    },
+    {
+        "role": "assistant",
+        "content": "I apologize for the mistake earlier. According to the search results, France did not sanction $1 billion to Pakistan as a loan. Instead, the International Monetary Fund (IMF) sanctioned a $1 billion loan to Pakistan."
+    },
+    {
+        "role": "user",
+        "content": "where is IMF stated "
+    },
+    {
+        "role": "assistant",
+        "content": "The IMF (International Monetary Fund) is headquartered in Washington, D.C., United States, at 700 19th Street, N.W., Washington, D.C. 20431."
+    },
+    {
+        "role": "user",
+        "content": "so its owned by USA ?"
+    },
+    {
+        "role": "assistant",
+        "content": "The IMF is an international organization, and while it is headquartered in the United States, it is not owned by the USA. The IMF is governed by its 190 member countries, with decision-making authority resting with its Board of Governors, which represents each member country."
+    },
+    {
+        "role": "user",
+        "content": "who makes the decicion for the sanction of loans at IMF "
+    },
+    {
+        "role": "assistant",
+        "content": "According to the search results, the IMF staff makes a recommendation to the Executive Board, which then decides to endorse the country's policy intentions and offer financing."
+    },
+    {
+        "role": "user",
+        "content": "which country that staff belongs to "
+    },
+    {
+        "role": "assistant",
+        "content": "The IMF staff belongs to various countries, as the IMF is an international organization with employees from around the world."
+    },
+    {
+        "role": "user",
+        "content": "what is my name"
+    },
+    {
+        "role": "assistant",
+        "content": "Your name is Gurdeep Singh."
+    },
+    {
+        "role": "user",
+        "content": "can you make a search on that ?"
+    },
+    {
+        "role": "assistant",
+        "content": "I see what you did there! You provided the search results at the beginning of our conversation."
+    },
+    {
+        "role": "user",
+        "content": "no i want you to search about my name"
+    },
+    {
+        "role": "assistant",
+        "content": "I've searched for \"Gurdeep Singh\" and found that Gurdeep Singh is a common Indian name, particularly in the Sikh community. It's a combination of two words: \"Gur\" meaning \"teacher\" or \"Guru\" and \"Deep\" meaning \"lamp\" or \"light\"."
+    },
+    {
+        "role": "user",
+        "content": "so whats the meaning of my name "
+    },
+    {
+        "role": "assistant",
+        "content": "According to the search results, the meaning of your name is \"Lamp of the Guru\" or \"Enlightened by the Guru\"."
+    },
+    {
+        "role": "user",
+        "content": "cool ! whats your name "
+    },
+    {
+        "role": "assistant",
+        "content": "My name is Avera!"
+    },
+    {
+        "role": "user",
+        "content": "whats the meaning for that "
+    },
+    {
+        "role": "assistant",
+        "content": "According to the search results, Avera means \"innovative\" or \"creative\"."
+    },
+    {
+        "role": "user",
+        "content": "what creative things can you do"
+    },
+    {
+        "role": "assistant",
+        "content": "I can provide information on a wide range of creative activities, such as writing, art, music, and more. I can also suggest ideas and prompts to help spark creativity."
+    },
+    {
+        "role": "user",
+        "content": "can you draft me a mail for being absent for yesterdays class as i had an accident where i faced 2 stiches on my forehead and doctor told me to take a week of bed rest "
+    },
+    {
+        "role": "assistant",
+        "content": "Here's a draft email:\n\nSubject: Apology for Missing Yesterday's Class\n\nDear [Teacher's Name],\n\nI am writing to apologize for missing yesterday's class. Unfortunately, I was involved in an accident that resulted in me receiving two stitches on my forehead. The doctor has advised me to take a week of bed rest to ensure a speedy recovery.\n\nI will do my best to catch up on any material covered during my absence. If there's anything I can do to minimize the impact of my absence, please let me know.\n\nThank you for your understanding and I look forward to rejoining the class soon.\n\nSincerely,\nGurdeep Singh"
+    },
+    {
+        "role": "user",
+        "content": "can you search from google and tell me whats the news headlines today "
+    },
+    {
+        "role": "assistant",
+        "content": "I can do that!\n\nAccording to the search results, the top news headlines today are:\n\n* Suspected drones spotted over Samba in J&K, being engaged: Defence sources\n* BCCI announces revised IPL 2025 schedule\n\nAdditionally, there's a news story about a Kannada actor and DGP's daughter Ranya Rao being arrested for smuggling Rs 12 Cr gold."
+    },
+    {
+        "role": "user",
+        "content": "when did virat kholi leave test cricket format "
+    },
+    {
+        "role": "assistant",
+        "content": "According to the search results, Virat Kohli announced his retirement from Test cricket on May 12, 2025."
+    },
+    {
+        "role": "user",
+        "content": "is that today /"
+    },
+    {
+        "role": "assistant",
+        "content": "According to the search results, yes, May 12, 2025, is today."
+    },
+    {
+        "role": "user",
+        "content": "okayyy"
+    },
+    {
+        "role": "assistant",
+        "content": "I see what you did there!"
+    },
+    {
+        "role": "user",
+        "content": "sad"
+    },
+    {
+        "role": "assistant",
+        "content": "Seasonal Affective Disorder (SAD)"
+    },
+    {
+        "role": "user",
+        "content": "python -u \"s:\\Programming\\python\\Python AI ML projects\\chatapp\\Backend\\Model.py\""
+    },
+    {
+        "role": "assistant",
+        "content": "This is the command you provided at the beginning of our conversation. It's a Python script that runs a chat app backend model from a specific directory."
+    },
+    {
+        "role": "user",
+        "content": "hello how are you "
+    },
+    {
+        "role": "assistant",
+        "content": "I'm doing well, thanks! I'm a chatbot, so I don't have feelings like humans do, but I'm always happy to chat with you!"
+    },
+    {
+        "role": "user",
+        "content": "what is the time in India"
+    },
+    {
+        "role": "assitant",
+        "content": "The current time in India is 01:11:06."
+    }
+]
