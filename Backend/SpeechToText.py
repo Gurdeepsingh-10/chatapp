@@ -63,16 +63,16 @@ with open(r"Data/Voice.html", "w", encoding="utf-8") as f:
 current_dir = os.getcwd()
 Link = f"{current_dir}/Data/Voice.html"
 
-# Setup Brave options
+# Setup Chrome options
 chrome_options = Options()
-chrome_options.binary_location = r"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe"  # <-- Path to Brave
+chrome_options.binary_location = r"C:\Program Files\Google\Chrome\Application\chrome.exe"  # <-- Path to Chrome
 user_agent = "Morzilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.142.86 Safari/537.36"
 chrome_options.add_argument(f"user-agent={user_agent}")
 chrome_options.add_argument("--use-fake-ui-for-media-stream")
 chrome_options.add_argument("--use-fake-device-for-media-stream")
-chrome_options.add_argument("--headless=new")  # Optional: remove if you want to see the browser
+chrome_options.add_argument("--headless=new")  # Optional: Remove if you want to see the browser
 
-# Create WebDriver with Brave
+# Create WebDriver with Chrome
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
