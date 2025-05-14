@@ -1,0 +1,18 @@
+[
+    {
+        "role": "user",
+        "content": "what is the time in India"
+    },
+    {
+        "role": "assistant",
+        "content": "The time in India is 15 hours, 23 minutes, and 16 seconds."
+    },
+    {
+        "role": "user",
+        "content": "what are todays headlines in india"
+    },
+    {
+        "role": "assistant",
+        "content": "Based on the latest updates, today's headlines in India are:\n\n* Strong dust storm hits Delhi, adjoining areas; IMD issues red alert\n* BJP clinches a massive victory in Assam's panchayat election\n* Trump meets Syrian leader Ahmed al-Sharaa in Saudi Arabia, heads to Qatar\n* 'I Told India-Pak, Let's Not Trade Nuclear Missiles': Trump's New Truce Claim Despite MEA Fact-Check\n* Turkey helped Pakistan attack India; 2 Turkish operatives killed: Sources\n* India denies Trump's claim of averting nuclear conflict with Pakistan"
+    }
+]

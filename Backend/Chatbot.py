@@ -8,7 +8,7 @@ env_vars = dotenv_values(".env")
 Username = env_vars.get("Username") 
 Assistantname = env_vars.get("Assistantname")
 GroqAPIKey = env_vars.get("GroqAPIKey")
-client = Groq(api_key = GroqAPIKey)
+client = Groq(api_key = "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")
 
 messages = []
 

@@ -6,7 +6,7 @@ env_vars = dotenv_values(".env")
 
 CohereAPIKey = env_vars.get("CohereApiKey")
 print(CohereAPIKey)
-co = cohere.Client(api_key = CohereAPIKey)
+co = cohere.Client(api_key = "nzI2S3S9dBdAn60xpnDXFXds9IXB4yJX0HilLMqK")
 
 funcs = [
     "exit","general","realtime","open","close","play","generate image","system",
