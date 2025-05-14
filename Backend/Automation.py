@@ -1,4 +1,4 @@
-from AppOpener import close , open as appopen
+from AppOpener  import close , open as appopen
 from webbrowser import open as webopen
 from pywhatkit import search , playonyt
 from dotenv import dotenv_values
@@ -9,19 +9,19 @@ import webbrowser
 import subprocess
 import requests
 import keyboard
-import aysncio
+import asyncio
 import os
 
 
 env_vars = dotenv_values(".env")
-GroqAPIKey = env_vars("GroqAPIKey")
+GroqAPIKey = env_vars.get("GroqAPIKey")
 
 classes = ["zCubwf","hgKElc","LTKOO sY7ric","Z0LcW","gsrt vk_bk FzvWSb YwPhnf","pclqee","tw-Data-text tw-text-small tw-ta-IZ66rdc","OSuR6d LTKOO","vlzY6d","webanswers-webanswers_table__webanswers-table","dDoNo ikb48b gsrt","sXLaOe","LWkfKe","VQF4g","qv3Wpe","kno-rdesc","SPZz6b"]
 
 useragent = "Morzilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36"
 
 
-client = Groq(api_key = GroqAPIKey)
+client = Groq(api_key = "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")
 
 professional_responses = [
     "Your satisfaction is my top priority; feel free to reach out if there's anything else I can help you with.",
@@ -32,7 +32,7 @@ professional_responses = [
 messages = []
 
 
-SystemChatBot = ({"role":"system","content":f"Hello, I am {os.environ['Username']} , You're a content writter. You have to write content like letter , mail, cv , resume ,etc"})
+SystemChatBot = [{"role":"system","content":f"Hello, I am {os.environ['Username']} , You're a content writter. You have to write content like letter , mail, cv , resume ,etc"}]
 
 
 
@@ -44,24 +44,26 @@ def Content(Topic):
 
     def OpenNotepad(File):
         default_text_editor = 'notepad.exe'
-        subprocess.Popen(default_text_editor,File)
+        subprocess.Popen([default_text_editor,File])
     
 
     def ContentWriterAI(prompt):
-        messages.append({"role":"user","content":f"{prompt}"},
-        messages = SystemChatBot+messages,
-        max_tokens = 2048,
-        tempreature = 0.7,
-        top_p = 1,
-        stream = True,
-        stop = None
+        messages.append({"role":"user","content":f"{prompt}"})
+        completion = client.chat.completions.create(
+            model ='llama-3.3-70b-versatile',
+            messages = SystemChatBot+messages,
+            max_tokens = 2048,
+            temperature = 0.7,
+            top_p = 1,
+            stream = True,
+            stop = None
         )
 
         Answer = ""
 
 
         for chunk in completion:
-            if chunk.choice[0].delta.content:
+            if chunk.choices[0].delta.content:
                 Answer += chunk.choices[0].delta.content
 
         Answer = Answer.replace("</s>","")
@@ -98,7 +100,7 @@ def OpenApp(app,sess = requests.session()):
             if html is None:
                 return []
             soup = BeautifulSoup(html,'html.parser')
-            links = soup.find_all('a',{'jsname : UWckNb'})
+            links = soup.find_all('a',{'jsname' : 'UWckNb'})
             return [link.get('href') for link in links]
         
 
@@ -131,7 +133,8 @@ def CloseApp(app):
             return True
         except:
             return False
-        
+
+
 def System(command):
 
     def mute():
@@ -147,16 +150,18 @@ def System(command):
         keyboard.press_and_release("volume down")
 
 
-    if command == 'mute':
+    if command in 'mute':
+        
+        
         mute()
 
-    elif command == 'unmute':
-        unmute()
+    elif command in 'unmute':
+            mute()
 
-    elif command == 'volume up':
+    elif command in 'volume up':
         volume_up()
 
-    elif command == 'volume down':
+    elif command in 'volume down':
         volume_down()
 
 
@@ -192,19 +197,19 @@ async def TranslateandExecute(commands:list[str]):
             funcs.append(fun)
 
 
-        elif command.startswithwith("content "):
+        elif command.startswith("content "):
             fun = asyncio.to_thread(OpenApp,command.removeprefix("content " ))
             funcs.append(fun)
 
-        elif command.startswithwith("google search "):
+        elif command.startswith("google search "):
             fun = asyncio.to_thread(OpenApp,command.removeprefix("google search " ))
             funcs.append(fun)
         
-        elif command.startswithwith("youtube search "):
+        elif command.startswith("youtube search "):
             fun = asyncio.to_thread(OpenApp,command.removeprefix("youtube search " ))
             funcs.append(fun)
         
-        elif command.startswithwith("system "):
+        elif command.startswith("system "):
             fun = asyncio.to_thread(OpenApp,command.removeprefix("system " ))
             funcs.append(fun)
             
@@ -227,5 +232,4 @@ async def Automation(commands : list[str]):
     return True
 
 
-
-
+System("unmute")
